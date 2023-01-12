@@ -1,5 +1,7 @@
 # Windows 11
 
+See [./create-usb-drive.md](./create-usb-drive.md) on how to create a bootable Windows 11 Setup USB Drive that does not require a Microsoft Account.
+
 ## What's new
 
 The [new Windows 11](https://www.microsoft.com/en-us/windows/windows-11) is basically the same as version 10, ~~like version 9~~, and 8, and carries almost all utilities and apps from [previous Windows versions](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions). As always, the system is fully [backwards-compatiable](https://www.youtube.com/watch?v=bC6tngl0PTI) and all previous Apps _should_ work.
@@ -21,6 +23,9 @@ The [new Windows 11](https://www.microsoft.com/en-us/windows/windows-11) is basi
 - _PC Should not be older then 10 years_
 - A SSD is, practically required, at this point.
 - x64 _(x86-64, amd64, 64-Bit PC)_ chip is required, x86 _(i386, 32-Bit PC)_ is **not supported**.
+
+With a normal Windows 11 Setup USB Drive (created using the Microsoft `mediacreationtool.exe`), these addiotional requirements would apply.
+
 - A Microsoft Account, [account.microsoft.com](https://account.microsoft.com) sign-in
 - Firmware needs to be [UEFI](https://en.wikipedia.org/wiki/UEFI) not [BIOS](https://en.wikipedia.org/wiki/BIOS)
 - The PC needs to have something called [TPM 2.0](https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee) or newer
