@@ -35,3 +35,74 @@ I got `Win11_22H2_English_x64v1.iso` (2022 Second half of year, English US, 64-B
 6. If everything is good, continue "OK", "OK"
 
 Check the [Rufus wiki](https://github.com/pbatard/rufus/wiki/FAQ) if you have any problems or questions.
+
+### Logs
+
+[My full log](./rufus.log)
+
+The USB Drive chosen and `.iso` to copy
+
+```log
+Found USB 2.0 device 'SanDisk Ultra USB 3.0 USB Device' (0781:5591)
+Disk type: Removable, Disk size: 16 GB, Sector size: 512 bytes
+```
+
+```log
+Using image: Win11_22H2_English_x64v1.iso (5.2 GB)
+```
+
+Format the USB Drive to: MBR: NTFS
+
+There is a hack with a second partition named `UEFI:NTFS` which enables booting the NT filesystem, from UEFI firmware, because UEFI _by the spec_ is restricted to only boot bootloader binaries contained in FAT32 filesystems.
+
+```log
+Format operation started
+Erasing 128 sectors
+Partitioning (MBR)...
+● Creating Main Data Partition (offset: 1048576, size: 14.3 GB)
+Formatting to NTFS (using IFS)
+Format completed.
+```
+
+Mount the new NTFS and `.iso` filesystems, and copy all files.
+
+```log
+Successfully remounted \\?\Volume{943fbff4-911f-11ed-b926-00155d9014e7}\ as E:
+Extracting files...
+```
+
+Overwrite `sources\` with custom configs.
+
+```log
+Applying Windows customization:
+Renamed 'E:\sources\appraiserres.dll' → 'E:\sources\appraiserres.bak'
+Created 'E:\sources\appraiserres.dll' placeholder
+Mounting 'E:\sources\boot.wim[2]'...
+Mounted 'E:\sources\boot.wim [2]' on 'C:\Windows\TEMP\Ruf6E02.tmp'
+Mounted offline registry hive 'C:\Windows\TEMP\Ruf6E02.tmp\Windows\System32\config\SYSTEM' to 'HKLM\RUFUS_OFFLINE_HIVE'
+Created 'HKLM\SYSTEM\Setup\LabConfig\BypassTPMCheck' registry key
+Created 'HKLM\SYSTEM\Setup\LabConfig\BypassSecureBootCheck' registry key
+Created 'HKLM\SYSTEM\Setup\LabConfig\BypassRAMCheck' registry key
+Created 'E:\sources\$OEM$\$$\Panther\unattend.xml'
+Unmounted offline registry hive 'HKLM\RUFUS_OFFLINE_HIVE'
+Unmounting 'E:\sources\boot.wim[2]'...
+Unmounted 'C:\Windows\TEMP\Ruf6E02.tmp [2]'
+```
+
+The finished USB Drive. The first 1 MB is used for the partition table. 2048 sectors with a size of 512 bytes per sector.
+
+`2048 * 512 / 1024 / 1024 = 1`
+
+```log
+Found USB device 'SanDisk Ultra USB 3.0 USB Device'
+Disk type: Removable, Disk size: 16 GB, Sector size: 512 bytes
+Partition type: MBR
+Partition 1:
+  Detected File System: NTFS
+  Size: 14.3 GB (15374177280 bytes)
+  Start Sector: 2048, Boot: Yes
+Partition 2 (UEFI:NTFS):
+  Detected File System: FAT12
+  Size: 1 MB (1048576 bytes)
+  Start Sector: 30029738, Boot: No
+```
