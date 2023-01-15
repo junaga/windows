@@ -1,6 +1,15 @@
 # Windows 11
 
-See [./create-usb-drive.md](./create-usb-drive.md) on how to create a bootable Windows 11 Setup USB Drive that does not require a Microsoft Account.
+## Installation
+
+See [./create-usb-drive.md](./create-usb-drive.md) on how to Create a bootable "Windows 11 Setup" installation USB Drive that does not require a Microsoft Account.
+
+1. Plug the USB Drive into your PC and boot the _Windows Preinstallation Environment_ from the PC Firmware (BIOS or UEFI) UI.
+2. Select "Windows 11 Pro" for installation, **not "N"**.
+3. Follow the onscreen installation instructions, and complete the setup.
+4. un/install the apps you like, with `winget.exe`
+   - `winget.exe install debian.debian` to setup WSL
+   - `winget.exe uninstall xbox` etc.
 
 ## What's new
 
@@ -58,12 +67,3 @@ I would not recommend installing either the Windows 11 "S" or "N" Editions anywh
 ### "N" Editions
 
 In 2004 [European lawmakers forced Microsoft](https://en.wikipedia.org/wiki/Microsoft_Corp._v._Commission), _after fining them 800 Million dollars_, to release future Windows distributions, without some of the preinstalled in-house apps from Microsoft. _Windows Media Player_ or _Skype_ would not be on the desktop by default to weaken Microsofts desktop software dominance. The plan never really worked out, and modern Apps like _Microsoft Teams_ could malfunction, because some other software _like DRM or Codecs_ would also be missing on the system. This can be fixed by installing the [_Media Feature Pack_](https://support.microsoft.com/en-us/topic/media-feature-pack-list-for-windows-n-editions-c1c6fffa-d052-8338-7a79-a4bb980a700a) on Windows 10/11 N Edition systems through the Windows Update settings menu.
-
-## Installation
-
-1. Plug the USB Drive into your PC and boot the _Windows Preinstallation Environment_ from the PC Firmware (BIOS or UEFI) UI.
-2. Select "Windows 11 Pro" for installation, **not "N"**.
-3. Follow the onscreen installation instructions, and complete the setup.
-4. un/install the apps you like, with `winget.exe`
-   - `winget.exe install debian.debian` to setup WSL
-   - `winget.exe uninstall xbox` etc.
