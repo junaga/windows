@@ -2,14 +2,15 @@
 
 ## Installation
 
-See [./create-usb-drive.md](./create-usb-drive.md) on how to Create a bootable "Windows 11 Setup" installation USB Drive that does not require a Microsoft Account.
+See [rufus/](./rufus/) on how to Create a [bootable](https://en.wikipedia.org/wiki/Live_USB) "Windows 11 Setup" USB Drive that does not require a Microsoft Account, TPM or UEFI firmware.
 
-1. Plug the USB Drive into your PC and boot the _Windows Preinstallation Environment_ from the PC Firmware (BIOS or UEFI) UI.
+1. Plug the bootable USB Drive into your PC and boot the _Windows Preinstallation Environment_ using the PC Firmware (BIOS or UEFI) UI.
 2. Select "Windows 11 Pro" for installation, **not "N"**.
 3. Follow the onscreen installation instructions, and complete the setup.
 4. un/install the apps you like, with `winget.exe`
    - `winget.exe install debian.debian` to setup WSL
    - `winget.exe uninstall xbox` etc.
+   - `winget.exe --help` for help
 
 ## What's new
 

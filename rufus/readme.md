@@ -1,15 +1,15 @@
-## Create USB Drive
+## Create bootable USB Drive
 
-[TPM](https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee) with [UEFI secure boot](https://wiki.debian.org/SecureBoot#:~:text=for%20more%20details.-,What%20is%20UEFI%20Secure%20Boot%3F,operating%20system%20has%20been%20loaded.), UEFI firmware itself and the [account.microsoft.com](https://account.microsoft.com) sign-in, **are not required** with this modified Windows 11 installer USB Drive. This configuration of the Windows NT kernelspace - "Windows Registry", is done by a Desktop program named "Rufus". You need:
+[TPM](https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee) with [UEFI secure boot](https://wiki.debian.org/SecureBoot#:~:text=for%20more%20details.-,What%20is%20UEFI%20Secure%20Boot%3F,operating%20system%20has%20been%20loaded.), UEFI firmware itself and the [account.microsoft.com](https://account.microsoft.com) sign-in, **are not required** with this modified Windows 11 Setup. A Windows Product License Key is also not required. Rufus will configure the system to be already "digitaly activated". This configuration of the Windows NT kernelspace - the Windows Registry, is done by a desktop app named "Rufus". You need:
 
 1. A working Windows PC with internet to run the `rufus.exe`
 2. A USB Drive with at least 8 GB of storage
 
 ### How it works
 
-We use Rufus to "flash" (format and copy) a _Windows 11 `.iso`_ to an USB Drive, and configure the copy to be without the MSFT Account/SSO requirement. Doing so wipes the USB Drive entirely, **all data will be lost**. A Windows Product License Key is also not required with such an installation. Rufus will configure the system to be already "digitaly activated".
+We use Rufus to format an USB Drive, copy a _Windows 11 `.iso`_ to it, and configure the copy to be without the MSFT Account/SSO requirement. Doing so wipes the USB Drive entirely, **all data will be lost**.
 
-![Rufus windows user experience settings](./rufus-customization.png)
+![Rufus windows user experience settings](./customization.png)
 
 ### [Download Rufus](https://github.com/pbatard/rufus/releases)
 
@@ -38,7 +38,7 @@ Check the [Rufus wiki](https://github.com/pbatard/rufus/wiki/FAQ) if you have an
 
 ### Logs
 
-[My full log](./rufus.log)
+[full log of my run](./my-run.log)
 
 The USB Drive chosen and `.iso` to copy
 
