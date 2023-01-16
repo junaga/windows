@@ -1,0 +1,67 @@
+# All of these packages were on my system by default, and I don't like them!
+
+Mail and Calendar
+Spotify Music
+Microsoft OneDrive
+Microsoft Teams
+Quick Assist
+Movies & TV
+Windows Media Player
+Phone Link
+Xbox Game Speech Window
+Xbox Identity Provider
+Xbox Game Bar
+Xbox Game Bar Plugin
+Xbox TCUI
+Xbox
+Windows Sound Recorder
+Windows Notepad
+Windows Maps
+Windows Camera
+Windows Calculator
+Windows Clock
+Windows Terminal
+Microsoft Photos
+Microsoft To Do
+Microsoft People
+Microsoft Sticky Notes
+Microsoft Tips
+Feedback Hub
+Snipping Tool
+Power Automate
+Paint
+Solitaire & Casual Games
+Office
+#Microsoft Edge
+Get Help
+MSN Weather
+Windows Web Experience Pack
+News
+Cortana
+Clipchamp
+# Microsoft Edge can not be so easily uninstalled unfortunately
+#Microsoft Edge Update
+#Microsoft Edge
+
+# Windows, winget itself and the Microsoft Store
+#Windows Security
+#Microsoft Update Health Tools
+#Windows Package Manager Source (winget)
+#App Installer
+#Store Experience Host
+#Microsoft Store
+#Microsoft Edge WebView2 Runtime
+
+# Language packs and drivers
+#Deutsch Local Experience Pack
+#Speech Pack - English (United States)
+#NVIDIA Graphics Driver 456.71
+
+
+# File formats
+#HEIF Image Extensions
+#HEVC Video Extensions from Device Manufacturer
+#Raw Image Extension
+#VP9 Video Extensions
+#Web Media Extensions
+#Webp Image Extensions
