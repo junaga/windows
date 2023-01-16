@@ -1,10 +1,10 @@
 # Windows 11
 
+See [rufus/](./rufus/) on how to create a "Windows 11 Setup" [bootable](https://en.wikipedia.org/wiki/Live_USB) USB Drive that does not require a TPM chip, UEFI motherboard firmware or a Microsoft Account sign-in.
+
 ## Installation
 
-See [rufus/](./rufus/) on how to Create a [bootable](https://en.wikipedia.org/wiki/Live_USB) "Windows 11 Setup" USB Drive that does not require a Microsoft Account, TPM or UEFI firmware.
-
-1. Plug the bootable USB Drive into your PC and boot the _Windows Preinstallation Environment_ using the PC Firmware (BIOS or UEFI) UI.
+1. Plug the USB Drive into your PC and boot it using the PC Firmware (BIOS or UEFI) UI.
 2. Select "Windows 11 Pro" for installation, **not "N"**.
 3. Follow the onscreen installation instructions, and complete the setup.
 4. un/install the apps you like, with `winget.exe`
@@ -32,9 +32,11 @@ The [new Windows 11](https://www.microsoft.com/en-us/windows/windows-11) is basi
 - PC, Monitor and Keyboard
 - _PC Should not be older then 10 years_
 - A SSD is, practically required, at this point.
-- x64 _(x86-64, amd64, 64-Bit PC)_ chip is required, x86 _(i386, 32-Bit PC)_ is **not supported**.
+- x64 _(x86-64, amd64, 64-Bit PC)_ CPU chip is required, x86 _(i386, 32-Bit PC)_ is **not supported**.
 
-With a normal Windows 11 Setup USB Drive (created using the Microsoft `mediacreationtool.exe`), these addiotional requirements would apply.
+Old devices can basically be _brought back to life_ by replacing the device primary disk, with an SSD. However Windows-NT (like Windows-DOS) is still trash, and Ubuntu _(recommended)_, or Linux Mint should be used on weak old Laptops.
+
+With a normal "Windows 11 Setup" bootable USB Drive (created using the Microsoft `mediacreationtool.exe`), these addiotional requirements would apply.
 
 - A Microsoft Account, [account.microsoft.com](https://account.microsoft.com) sign-in
 - Firmware needs to be [UEFI](https://en.wikipedia.org/wiki/UEFI) not [BIOS](https://en.wikipedia.org/wiki/BIOS)
@@ -43,11 +45,9 @@ With a normal Windows 11 Setup USB Drive (created using the Microsoft `mediacrea
   - `tpm.msc` should be "ready for use"
   - [Documentation](https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-overview)
 
-Old devices can basically be _brought back to life_ by replacing the device primary disk, with an SSD. However Windows-NT (like Windows-DOS) is still trash, and Ubuntu _(recommended)_, or Linux Mint should be used on weak old Laptops.
-
 ## Editions
 
-Just install "**Windows 11 Pro**". See [installation](#installation) below
+Just install "**Windows 11 Pro**".
 
 Windows _Pro_ has some technical features _Home_ is lacking. Even though only a developer would really notice the difference. However you can install Windows Home on your moms old laptop if you want to.
 
