@@ -61,14 +61,24 @@ _Very rarely it can happen that a Windows update disables some Windows features,
 
 ## 3. Installation
 
-Install linux and create a linux user.
-
-Every operating system needs a user. For `username` you could use your [github.com](https://github.com) username. For `password` you could use `1`.
-
 ```bat
 REM open cmd.exe
 
+REM list distros hosted by Microsoft
+wsl.exe --list --online
+
+REM install a distro
 wsl.exe --install --distribution ubuntu
+```
+
+_Without a `--distribution $DISTRO` WSL defaults to `ubuntu`._
+
+Finally, every system needs a user. For `username` you could use your [github.com](https://github.com) username and `password` you could use `1`.
+
+```bat
+REM open cmd.exe
+wsl.exe
+
 REM enter username
 REM enter password
 
@@ -78,8 +88,6 @@ REM WELCOME...
 uname -a
 # GNU/Linux
 ```
-
-_The `--distribution $DISTRO` is optional and defaults to `ubuntu`._
 
 ## Done
 
