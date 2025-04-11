@@ -1,5 +1,9 @@
 @ECHO OFF
 
+@REM Enable Windows Features 
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
 ECHO uninstalling previous Debian
 wsl.exe --unregister Debian
 
