@@ -20,7 +20,7 @@ _This process is different depending on CPU, motherboard, and firmware. I highly
 4. Enable **SVM Mode**
 5. Save and exit
 
-![Enable Virtualzation for AMD on Asus](virtualization-uefi-amd-asus.png)
+![Enable Virtualzation for AMD on Asus](virtualization-uefi-asus-amd.png)
 
 ### Intel CPU
 
@@ -30,7 +30,7 @@ _This process is different depending on CPU, motherboard, and firmware. I highly
 4. Enable **Virtualization Technology**
 5. Save and exit
 
-![Enable Virtualzation for Intel on Asus](virtualization-uefi-intel-asus.png)
+![Enable Virtualzation for Intel on Asus](virtualization-uefi-asus-intel.png)
 
 ```bat
 REM open cmd.exe
