@@ -1,10 +1,12 @@
 # Windows Subsystem for Linux [--microsoft](https://learn.microsoft.com/windows/wsl/)
 
-The **Windows Subsystem for Linux version 2** `wsl.exe` is a virtual machine that can run any [Linux distribution](https://en.wikipedia.org/wiki/List_of_Linux_distributions). To run `wsl.exe` you need
+The **Windows Subsystem for Linux version 2** `wsl.exe` is a virtual machine that can run any [Linux distribution](https://en.wikipedia.org/wiki/List_of_Linux_distributions). To run `wsl.exe` you need,
 
-- a modern [x86-64](https://en.wikipedia.org/wiki/X86-64) CPU, with [x86 virtualization](https://en.wikipedia.org/wiki/X86_virtualization)
+- a modern [x86-64](https://en.wikipedia.org/wiki/X86-64) CPU (which has [x86 virtualization](https://en.wikipedia.org/wiki/X86_virtualization))
 - Windows 10, Windows 11, or later
 - installed Windows Updates: [ms-settings:windowsupdate](ms-settings:windowsupdate)
+
+_Intel and AMD CPUs manufactured after 2010 have x86 virtualization._
 
 ## 1. Enable x86 virtualization
 
@@ -91,7 +93,7 @@ uname -a
 
 ## Done
 
-That's it make sure to RTFM and happy hacking!
+That's it, make sure to RTFM and happy hacking!
 
 - create, read, update and delete unix files
 - install and run any linux program
