@@ -109,5 +109,5 @@ ls /
 ping 1.1.1.1
 
 # this works!
-explorer.exe ./
+explorer.exe .
 ```
