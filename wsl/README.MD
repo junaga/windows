@@ -1,4 +1,4 @@
-# Linux [--microsoft](https://learn.microsoft.com/windows/wsl/)
+# Windows Subsystem for Linux [--microsoft](https://learn.microsoft.com/windows/wsl/)
 
 The **Windows Subsystem for Linux version 2** `wsl.exe` is a virtual machine that can run any [Linux distribution](https://en.wikipedia.org/wiki/List_of_Linux_distributions). To run `wsl.exe` you need
 
