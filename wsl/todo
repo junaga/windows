@@ -1,0 +1,6 @@
+sudo usermod -aG root <username>
+link to debian/ubuntu linux guide
+https://www.linuxatemyram.com/
+https://www.google.com/search?q=linux+using+RAM
+document WSL commands
+tutorial on how to reboot into firmware
