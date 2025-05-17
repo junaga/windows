@@ -66,7 +66,7 @@ _Very rarely it can happen that a Windows update disables some Windows features,
 ```bat
 REM open cmd.exe
 
-REM list Microsoft Store distros
+REM list Linux distros in Microsoft Store
 wsl.exe --list --online
 
 REM install a distro
@@ -112,4 +112,9 @@ ping 1.1.1.1
 
 # this works!
 explorer.exe .
+
+# view all info or just ask ChatGPT for help
+wsl.exe --list
+wsl.exe --version
+wsl.exe --help
 ```
