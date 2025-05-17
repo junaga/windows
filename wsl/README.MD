@@ -70,10 +70,10 @@ REM list Linux distros in Microsoft Store
 wsl.exe --list --online
 
 REM install a distro
-wsl.exe --install --distribution ubuntu
+wsl.exe --install Ubuntu
 ```
 
-_Without a `--distribution $DISTRO`, the `--install` command defaults to `ubuntu`._
+Without a `--install $DISTRO` `--install` defaults to `Ubuntu` https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us
 
 Finally, every system needs a user. For `username` you could use your [github.com](https://github.com) username and for `password` you could use `1`.
 
