@@ -1,3 +1,7 @@
+# MOVED -> https://github.com/junaga/debian/tree/main/windows
+
+This repository is archived.
+
 # Windows 11
 
 See [rufus/](./rufus/) on how to create a "Windows 11 Setup" [bootable](https://en.wikipedia.org/wiki/Live_USB) USB Drive that does not require a TPM chip, UEFI motherboard firmware or a Microsoft Account sign-in.
